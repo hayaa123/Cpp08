@@ -23,10 +23,4 @@ class MutantStack : public std::stack<T, Container>
         }
 };
 
-// template <class T, class Container = std::deque<T> >
-// std::ostream &operator << (std::ostream &os, MutantStack<T, Container> mStack)
-// {
-//     std::cout 
-// }
-
 #endif
