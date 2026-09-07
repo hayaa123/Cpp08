@@ -3,8 +3,6 @@
 
 # include <stack>
 # include <deque>
-#include <iostream>
-#include <list>
 
 
 // c is the underlying container in the stack 
@@ -12,7 +10,7 @@ template <class T, class Container = std::deque<T> >
 class MutantStack : public std::stack<T, Container>
 {
     public:
-        typedef typename Container::iterator iterator;    
+        typedef typename Container::iterator iterator;
         typename Container::iterator begin()
         {
             return (this->c.begin());

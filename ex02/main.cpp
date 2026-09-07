@@ -1,5 +1,6 @@
 #include "MutantStack.hpp"
-
+#include <iostream>
+#include <list>
 
 void test_stack()
 {
