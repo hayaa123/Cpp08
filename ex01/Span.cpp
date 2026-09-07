@@ -132,7 +132,7 @@ std::ostream &operator <<(std::ostream &os,const Span &span)
     
     data = span.getData();
     start = data.begin();
-
+    end = data.end();
     if(span.getSize() < 15)
         displayed = span.getSize();
     else
@@ -146,5 +146,10 @@ std::ostream &operator <<(std::ostream &os,const Span &span)
     }
     if(span.getSize() > displayed)
         os << "..." << std::endl;
+    if(span.getSize() > displayed + 1)
+    {
+        end--;
+        os << *(end) << std::endl;
+    }
     return (os);
 }
